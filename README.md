@@ -45,23 +45,23 @@ sdfksdfj
 ===PROCESS REQUEST LINE===
 METHOD : POST
 ===PROCESS HEADER===
-FORMDATA BOUNDARY : --------------------------930808077691525746483916
-HEADER : [["Content-Type", "multipart/form-data; boundary=--------------------------930808077691525746483916"], ["User-Agent", "PostmanRuntime/7.15.0"], ["Accept", "*/*"], ["Cache-Control", "no-cache"], ["Postman-Token", "36afcac3-503d-4309-b2ab-2a7ccbc4163a"], ["Host", "localhost:8080"], ["accept-encoding", "gzip, deflate"], ["content-length", "564"], ["Connection", "keep-alive"]]
+FORMDATA BOUNDARY : --------------------------496900655673395966503899
+HEADER : [["Content-Type", "multipart/form-data; boundary=--------------------------496900655673395966503899"], ["User-Agent", "PostmanRuntime/7.15.0"], ["Accept", "*/*"], ["Cache-Control", "no-cache"], ["Postman-Token", "2d3d5feb-adf5-4400-b99b-a5acb81be22c"], ["Host", "localhost:8080"], ["accept-encoding", "gzip, deflate"], ["content-length", "564"], ["Connection", "keep-alive"]]
 ===PROCESS DATA===
-FormData { name: "s", value: Text("\r\nsfddsf\r\n") }
-FormData { name: "as", value: File(Stream, "temp.txt", [67, 111, 110, 116, 101, 110, 116, 45, 84, 121, 112, 101, 58, 32, 116, 101, 120, 116, 47, 112, 108, 97, 105, 110, 13, 10, 13, 10, 108, 115, 107, 100, 102, 106, 115, 108, 107, 100, 102, 106, 10, 115, 108, 107, 102, 106, 115, 100, 108, 102, 106, 107, 115, 10, 115, 107, 108, 100, 102, 106, 100, 107, 115, 102, 106, 10, 115, 100, 102, 107, 115, 100, 102, 106, 10]) }
-FormData { name: "ass", value: File(Stream, "tempb", [67, 111, 110, 116, 101, 110, 116, 45, 84, 121, 112, 101, 58, 32, 97, 112, 112, 108, 105, 99, 97, 116, 105, 111, 110, 47, 111, 99, 116, 101, 116, 45, 115, 116, 114, 101, 97, 109, 13, 10, 13, 10, 108, 115, 107, 100, 102, 106, 115, 108, 107, 100, 102, 106, 10, 115, 108, 107, 102, 106, 115, 100, 108, 102, 106, 107, 115, 10, 115, 107, 108, 100, 102, 106, 100, 107, 115, 102, 106, 10, 115, 100, 102, 107, 115, 100, 102, 106, 10]) }
+FormData { name: "s", value: Text("sfddsf") }
+FormData { name: "as", value: File(Stream, "temp.txt", [13, 10, 108, 115, 107, 100, 102, 106, 115, 108, 107, 100, 102, 106, 10, 115, 108, 107, 102, 106, 115, 100, 108, 102, 106, 107, 115, 10, 115, 107, 108, 100, 102, 106, 100, 107, 115, 102, 106, 10, 115, 100, 102, 107, 115, 100, 102, 106, 10]) }
+FormData { name: "ass", value: File(Stream, "tempb", [13, 10, 108, 115, 107, 100, 102, 106, 115, 108, 107, 100, 102, 106, 10, 115, 108, 107, 102, 106, 115, 100, 108, 102, 106, 107, 115, 10, 115, 107, 108, 100, 102, 106, 100, 107, 115, 102, 106, 10, 115, 100, 102, 107, 115, 100, 102, 106, 10]) }
 ```
 
 ### Output File
 ```
 ╭─ethles@ETHLES ~ 
-╰─$ tree  -s -h --du temp    
+╰─$ tree  -s -h --du temp                                          
 temp
-├── [  75]  temp.txt
-└── [  89]  tempb
+├── [  49]  temp.txt
+└── [  49]  tempb
 
-  292 used in 0 directories, 2 files
+  226 used in 0 directories, 2 files
 ```
 
 ## How To Use 

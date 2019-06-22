@@ -73,9 +73,10 @@ fn handle_connection(mut stream: std::net::TcpStream) {
         Regex::new("Content-Disposition: form-data; .*? filename=\"(.*?)\"").unwrap();
     let content_type_re = Regex::new("^Content-Type: (.*?)").unwrap();
     let text_type_data_re =
-        Regex::new("Content-Disposition: form-data; name=\".*?\"\r\n([\\S\\s]*?)--").unwrap();
+        Regex::new("Content-Disposition: form-data; name=\".*?\"[\\S\\s]+?\r\n([\\S\\s]*?)\r\n--")
+            .unwrap();
     let file_type_data_re = Regex::new(
-        "Content-Disposition: form-data; name=\".*?\"; filename=\".*?\"\r\n([\\S\\s]*?)\r\n--",
+        "Content-Disposition: form-data; name=\".*?\"; filename=\".*?\"[\\S\\s]+?\r\n([\\S\\s]*?)\r\n--",
     )
     .unwrap();
 
