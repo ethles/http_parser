@@ -1,0 +1,8 @@
+[package]
+name = "paoding_rust"
+version = "0.1.0"
+authors = ["ethles <percivalstr@163.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1"
